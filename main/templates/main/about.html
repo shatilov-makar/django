@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title%}Про нас{% endblock %}
+
+{% block content%}
+<div class="features">
+    <h1>Информация о нас</h1>
+    {% filter upper %}
+    <p> Мы отбираем для вас новости из самых разных источников, если у вас есть какие-то жалобы или предложения, то
+        пишите на нашу почту: "myproject@gmail.com" (не настоящая)</p> {% endfilter %}
+    <a href="{% url 'home' %}">
+        <button class="btn btn-warning">На главную</button>
+    </a>
+</div>
+{% endblock %}

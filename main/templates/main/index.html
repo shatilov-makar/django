@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block content%}
+<div class="features">
+    <h1>{{ title }}</h1>
+    {% filter upper %}
+    <p>Добро пожаловать на сайт "Project"!</p>
+    <p>Здесь вы можете найти самые свежие и интересные новости современной киноиндустрии</p>
+    {% endfilter %}
+    <a href="{% url 'news' %}">
+        <button class="btn btn-warning">Читать новости</button>
+    </a>
+
+
+</div>
+{% endblock %}
